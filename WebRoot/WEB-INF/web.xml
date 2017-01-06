@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>day04</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Servlet01</servlet-name>
+    <servlet-class>com.itcast.day04.ServletDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet01</servlet-name>
+    <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet02</servlet-name>
+    <servlet-class>com.itcast.servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet02</servlet-name>
+    <url-pattern>/Servlet02</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletThread</servlet-name>
+    <servlet-class>com.itcast.servlet.ServletThread</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletThread</servlet-name>
+    <url-pattern>/thread</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>servletconfig</servlet-name>
+    <servlet-class>com.itcast.servlet.ServletConfigDemo</servlet-class>
+    <init-param>
+    	<param-name>data</param-name>
+    	<param-value>value</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>data1</param-name>
+    	<param-value>value1</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>data2</param-name>
+    	<param-value>value2</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletconfig</servlet-name>
+    <url-pattern>/config</url-pattern>
+  </servlet-mapping>
+</web-app>
